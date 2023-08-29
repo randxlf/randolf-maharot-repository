@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 12px;
+}
+
+body.yes{
+    background-color: violet;
+}
+
+body.yes .confirm{
+    display: none;
+}
+
+body.yes .dialog{
+    display: block;
+}
+
+.confirm{
+    min-width: 50vh;
+    height: 15vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b0498d;
+    box-shadow: 3px 3px 3px #7e3a68;
+    border-radius: 5px;
+}
+
+.confirm_container{
+    padding: 10px;
+}
+
+.confirm_container .title{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.confirm_actions{
+    display: flex;
+    column-gap: 10px;
+}
+
+.confirm_actions button{
+    width: 100%;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.confirm_actions .btn-yes{
+    background-color: #a3ddcb; 
+}
+
+.confirm_actions .btn-no{
+    position: relative;
+    background-color: #e97777;
+}
+
+.dialog{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f261ac;
+    box-shadow: 3px 3px 3px rgba(160, 69, 116);
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.dialog_container{
+    padding: 15px 5px;
+}
+
+.dialog_container p {
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 1366px){
+    .confirm{
+        height: 20vh;
+    }
+}
